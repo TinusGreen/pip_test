@@ -2,13 +2,7 @@ from setuptools import find_packages
 from setuptools import setup
 
 REQUIRED_PACKAGES = ['pytest','aocr', 'numpy', 'opencv-python', 'Flask', 'flask_restful', 'flask_httpauth', 'pytest-shutil', 'pillow', 'pyppeteer']
-VERSION = 'v1.2'
-try:
-    import pypandoc
-    README = pypandoc.convert('README.md', 'rst')
-except(IOError, ImportError):
-    README = open('README.md').read()
-
+VERSION = 'v1.3'
 
 setup(
     name='captcha22',
@@ -23,7 +17,6 @@ setup(
     license='MIT',
     description=('''CAPTCHA Cracking Server and Client based '''
                  '''on Tensorflow, attention-ocr and Flask. '''),
-    long_description=README,
     entry_points={
         'console_scripts': ['captcha22=captcha22.__main__'],
     }
