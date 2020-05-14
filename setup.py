@@ -1,8 +1,8 @@
 from setuptools import find_packages
 from setuptools import setup
 
-REQUIRED_PACKAGES = ['aocr', 'numpy', 'opencv-python', 'flask', 'flask_restful', 'flask_httpauth', 'pytest-shutil', 'pytest', 'pillow', 'pyppeteer']
-VERSION = 'v1.1'
+REQUIRED_PACKAGES = ['pytest','aocr', 'numpy', 'opencv-python', 'Flask', 'flask_restful', 'flask_httpauth', 'pytest-shutil', 'pillow', 'pyppeteer']
+VERSION = 'v1.2'
 try:
     import pypandoc
     README = pypandoc.convert('README.md', 'rst')
